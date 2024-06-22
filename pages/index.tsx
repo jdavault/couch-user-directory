@@ -1,7 +1,9 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
+/** @format */
 
-const inter = Inter({ subsets: ["latin"] });
+import Image from "next/image"
+import { Inter } from "next/font/google"
+
+const inter = Inter({ subsets: ["latin"] })
 
 export default function Home() {
   return (
@@ -114,5 +116,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  );
+  )
 }

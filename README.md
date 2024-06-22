@@ -12,7 +12,6 @@ This repository contains a NextJS app that lists the names of dummy users, which
 
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Configuration](#configuration)
 - [Running](#Running)
 - [Contributing](#contributing)
 - [License](#license)
@@ -37,14 +36,6 @@ Before you begin, ensure you have the following:
 
    ```sh
    npm install
-   ```
-
-## Configuration
-
-1. Create a `.env` file in the root directory and add the necessary environment variables:
-
-   ```env
-   PORT=3000
    ```
 
 ## Running

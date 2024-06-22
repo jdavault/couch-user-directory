@@ -1,0 +1,68 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "davauj2",
+      "phone": "602-614-1243",
+      "email": "joe.davault@medtronic.com",
+      "age": 45,
+      "name": "Joe Davault",
+      "friends": [1, 2, 3, 4, 5, 6]
+    },
+    {
+      "id": "2",
+      "username": "blomme2",
+      "phone": "952-451-7469",
+      "email": "erin.blomme@medtronic.com",
+      "age": 28,
+      "name": "Erin Bloome",
+      "friends": [1, 3, 4]
+    },
+    {
+      "id": "3",
+      "username": "despoux",
+      "email": "franco.despoux@medtronic.com",
+      "phone": "917-807-4761",
+      "age": 28,
+      "name": "Franco Despoux",
+      "friends": [1, 2, 4]
+    },
+    {
+      "id": "4",
+      "username": "favrea1",
+      "phone": "763-514-8148",
+      "email": "annie.m.mickelson@medtronic.com",
+      "age": 32,
+      "name": "Annie Mickelson",
+      "friends": [1, 2, 3]
+    },
+    {
+      "id": "5",
+      "username": "davauj4",
+      "phone": "777-777-7777",
+      "email": "janelle.davault@gmail.com",
+      "age": 31,
+      "name": "Janelle Davault",
+      "friends": [1, 6]
+    },
+    {
+      "id": "6",
+      "username": "davauj3",
+      "phone": "777-777-7777",
+      "email": "ashley.davault@gmail.com",
+      "age": 31,
+      "name": "Ashley Davault",
+      "friends": [1, 5]
+    }
+  ],
+  "posts": [
+    { "thread": 1, "text": "To pass AWS Exams, read AWS Whitepapers", "user": 3 },
+    { "thread": 1, "text": "Do hands-on labs and practice inside the AWS Console", "user": 2 },
+    { "thread": 1, "text": "Udemy is a great resource for AWS certifications", "user": 5 },
+    {
+      "thread": 1,
+      "text": "When it comes ot AWS practice tests, I trust Wizlaabs, their practice testsis often of high qulity and covers example topics nicely",
+      "user": 1
+    }
+  ]
+}

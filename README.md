@@ -6,7 +6,7 @@
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-This repository contains a NextJS app that lists the names of dummy users, which can be fetched from an API call to a NextJS API route (/api/users). This date is used on the user page (/users). The data for the users is from mocked data. A user can click on another user and go to their profile page (/users/:id). On the profile page you will see user details. The profile information also comes from an API endpoints (/api/user/:id) that are served from the NextJS app. On a users profile page (/user/:id), you can click on one of the friends to be routed to that friend's profile page
+This repository contains a NextJS app that lists the names of users, which can be fetched from an API call to a NextJS API route (/api/users). This fetched data is used on a user page (/users). The data for the users is from mocked data. A user can click on another user and go to their profile page (/users/:id). On the profile page you will see user details. The profile information also comes from an API endpoint (/api/user/:id) served from the NextJS app. On a user's profile page (/user/:id), you can click on one of the friends to be routed to that friend's profile page.
 
 ## Table of Contents
 

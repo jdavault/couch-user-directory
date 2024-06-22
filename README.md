@@ -29,7 +29,7 @@ Before you begin, ensure you have the following:
 
    ```sh
    git clone https://github.com/jdavault/couch-user-directory
-   cd cs-user-directory
+   cd couch-user-directory
    ```
 
 2. Install dependencies:

@@ -11,6 +11,7 @@ export default function UserProfile() {
   const { id } = router.query
   const [user, setUser] = useState<User>({} as User)
   const [friends, setFriends] = useState<User[]>([])
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     const fetchData = async () => {
@@ -18,19 +19,25 @@ export default function UserProfile() {
         setTimeout(async () => {
           try {
             const res = await fetch(`/api/users/${id}`)
+            if (!res.ok) {
+              throw new Error(`HTTP error! status: ${res.status}`)
+            }
+
             const userData = await res.json()
             setUser(userData)
-
-            // Fetch friends' data
             const friendsData = await Promise.all(
               userData.friends.map(async (friendId: string) => {
                 const friendRes = await fetch(`/api/users/${friendId}`)
+                if (!friendRes.ok) {
+                  throw new Error(`HTTP error fetching friend! status: ${friendRes.status}`)
+                }
+
                 return await friendRes.json()
               })
             )
             setFriends(friendsData)
-          } catch (error) {
-            console.error("Error fetching data:", error)
+          } catch (error: any) {
+            setError(error.message || "An unexpected error occurred")
           }
         }, 1000) // 1 second delay
       }
@@ -39,6 +46,13 @@ export default function UserProfile() {
     fetchData()
   }, [id])
 
+  if (error) {
+    return (
+      <div className="text-red-500 text-center">
+        <div className="text-2xl font-bold">{error}</div>
+      </div>
+    )
+  }
   if (!user || Object.keys(user).length === 0) {
     return (
       <div className="flex items-center justify-center h-screen">
